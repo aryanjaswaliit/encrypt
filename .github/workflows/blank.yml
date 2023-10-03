@@ -47,4 +47,19 @@ jobs:
           cd aryan_test
           echo "addded something in " >> a.txt
           ls -lh
+          cd
+      - name : instal encrypt and decrypt
+        run : |
+          wget https://github.com/aryanjaswaliit/encrypt/releases/download/Linux/encrypt
+          wget https://github.com/aryanjaswaliit/encrypt/releases/download/Linux/decrypt
+          sudo chmod +x encrypt
+          sudo chmod +x decrypt
+          ls -lh
+          ./encrypt
+          cd aryan_test
+          ls -lh
+          cd
+          ./decrypt
+          cd aryan_test
+          ls -lh
         
