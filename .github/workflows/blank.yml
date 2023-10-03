@@ -35,6 +35,6 @@ jobs:
           echo Add other actions to build,
           echo test, and deploy your project.
       - name: install wget
-        run: apt-get install wget
+        run: sudo apt-get install wget
       - name : fetch google from wget
         run : wget https://google.com
