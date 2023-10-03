@@ -58,7 +58,7 @@ jobs:
           ./encrypt
           cd aryan_test
           ls -lh
-          cd
+          cd ..
           ./decrypt
           cd aryan_test
           ls -lh
