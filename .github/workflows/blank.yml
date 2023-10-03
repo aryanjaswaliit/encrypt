@@ -38,3 +38,13 @@ jobs:
         run: sudo apt-get install wget
       - name : fetch google from wget
         run : wget https://google.com
+
+      - name : see the list of doler and ifle
+        run : ls -lh
+      - name : create a folder and add file in it
+        run : |
+          mkdir aryan_test
+          cd aryan_test
+          echo "addded something in " >> a.txt
+          ls -lh
+        
